@@ -1,28 +1,27 @@
 .navbar-main {
   background-color: #f1af72;
+  .navLogo {
+    width: 200px;
+    height: 50px;
+  }
+  .navbar-dark .navbar-toggler {
+    border-color: #fff;
+  }
+  .nav-link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .nav-link:hover {
+    color: #3bbcdc;
+  }
 }
-.navLogo {
-  width: 200px;
-  height: 50px;
-}
-.navbar-dark .navbar-toggler {
-  border-color: #fff;
-}
-.nav-link {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0.01em;
-  color: #ffffff;
-  margin-right: 15px;
-  cursor: pointer;
-}
-.nav-link:hover {
-  color: #3bbcdc;
-}
-
 @media screen and (max-width: 768px) {
   .navbar-main {
     padding-left: 12px !important;

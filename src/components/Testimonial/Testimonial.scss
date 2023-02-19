@@ -1,0 +1,101 @@
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 130vh;
+  background-color: #ef9b4d;
+  font-family: "DM Serif Display", sans-serif;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.2;
+
+  .brand-slider {
+    width: 100%;
+    h1 {
+      font-size: 2.5vw;
+    }
+    .brand-img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      .brand-img {
+        padding: 2%;
+        img {
+          filter: invert(0%) sepia(0%) saturate(18%) hue-rotate(146deg)
+            brightness(0%) contrast(102%);
+        }
+      }
+    }
+    .brand-icons {
+      background-color: #f8f8f8;
+      padding: 20px 0;
+    }
+
+    .brand-icons img {
+      max-width: 100%;
+    }
+  }
+  .border-line {
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    height: 2px;
+    background-image: linear-gradient(
+      270deg,
+      transparent 20%,
+      rgba(0, 0, 0, 0.4) 50%,
+      transparent 80%
+    );
+  }
+  .accordion {
+    width: 65%;
+    .testimonial-title {
+      h1 {
+        font-size: 5vw;
+      }
+      h2 {
+        font-family: "DM Serif Display", sans-serif;
+        color: white;
+        font-size: 2.5vw;
+        line-height: 1;
+        font-weight: 400;
+      }
+    }
+
+    .accordion-title {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 19px;
+      cursor: pointer;
+      background-color: #ef9b4d;
+    }
+
+    .accordion-title:hover {
+      background-color: #ef9b4d;
+    }
+
+    .accordion-title,
+    .accordion-content {
+      padding: 1.2rem;
+    }
+
+    .accordion-content {
+      font-size: 18px;
+      line-height: 1.2;
+      font-family: Poppins, sans-serif;
+      color: aliceblue;
+      background-color: #ef9b4d;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .testimonial-section .accordion {
+    width: 90%;
+  }
+}
