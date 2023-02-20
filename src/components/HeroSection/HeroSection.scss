@@ -7,34 +7,79 @@
   .leftBox {
     margin: 20px auto;
     h1 {
-      font-family: "Montserrat";
+      font-family: "DM Serif Display", sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 50px;
-      letter-spacing: 0.01em;
-      color: #ffffff;
+      line-height: 0.8;
+      color: #000000;
       margin-bottom: 25px;
+    }
+    .second-line {
+      color: #ffffff;
+    }
+    h4 {
+      color: #000;
     }
     p {
       font-family: "Poppins", sans-serif;
       font-style: normal;
       font-weight: 500;
-      font-size: 20px;
-      letter-spacing: 0.01em;
-      color: #dfdcdc;
+      font-size: 18px;
+      text-align: justify;
+      line-height: 1.2;
+      color: #ffffff;
       margin-bottom: 60px;
     }
     .buttonBox {
-      .enquireBTN {
-        font-family: "Montserrat", sans-serif;
-        padding: 10px 20px;
-        background: #44b34d;
-        border-radius: 4px;
-        color: #ffffff;
-        cursor: pointer;
-        border: none;
-        outline: none;
-        margin-right: 30px;
+      .searchbox-wrap {
+        display: flex;
+        width: 100%;
+        input {
+          flex: 1;
+          padding: 15px 12px;
+          font-size: 0.9em;
+
+          -webkit-border-top-left-radius: 20px;
+          -webkit-border-bottom-left-radius: 20px;
+          -moz-border-radius-topleft: 20px;
+          -moz-border-radius-bottomleft: 20px;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+          box-shadow: none;
+          border: none;
+        }
+        input:focus {
+          outline: none;
+        }
+        button {
+          // width: 100px;
+          background-color: #fff;
+          -webkit-border-top-right-radius: 20px;
+          -webkit-border-bottom-right-radius: 20px;
+          -moz-border-radius-topright: 20px;
+          -moz-border-radius-bottomright: 20px;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          border: none;
+          cursor: pointer;
+          cursor: hand;
+
+          span {
+            // width: 100%;
+            width: 400px;
+            padding: 14px 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #ef9b4d;
+            background-color: #1a1b1f;
+            border-radius: 20px;
+
+            &:hover {
+              background-color: #1a1b1f;
+            }
+          }
+        }
       }
     }
   }

@@ -5,10 +5,10 @@ import NavLogo from "./../../assets/Logo.png";
 function Footer() {
   return (
     <>
-      <div className="footer px-5  ">
-        <div className="container-fluid px-5 ">
-          <div className="row  py-4">
-            <div className="my-auto text-left col-md-3">
+      <div className="footer px-5">
+        <div className="container-fluid ">
+          <div className="row py-4 my-4">
+            <div className="my-auto text-center  text-md-center col-lg-3">
               <a href="#">
                 <img
                   src={NavLogo}
@@ -18,7 +18,7 @@ function Footer() {
                 />
               </a>
             </div>
-            <div className="my-3 text-center col-md-6">
+            <div className="my-3 text-center col-lg-5 ">
               <div className="text-center">
                 <ul className="nav justify-content-center footer-links">
                   <li className="nav-item">
@@ -45,10 +45,13 @@ function Footer() {
               </div>
             </div>
             <hr className="clearfix w-100 d-md-none" />
-            <div className="my-3 text-center col-md-3">
-              <a className="nav-link" href="#">
-                working on it
-              </a>
+            <div className="my-auto text-center col-lg-4">
+              <div class="searchbox-wrap">
+                <input type="text" placeholder="Join the waitlist" />
+                <button>
+                  <span>&#8594;</span>
+                </button>
+              </div>
             </div>
           </div>
           <div className="row footer-lower">
