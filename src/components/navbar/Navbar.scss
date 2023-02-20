@@ -1,5 +1,7 @@
 .navbar-main {
-  background-color: #f1af72;
+  background-color: #ffffff;
+  color: #000;
+  box-shadow: inset 700px 0 200px 0 #ee9a4d;
   .navLogo {
     width: 200px;
     height: 50px;
@@ -8,18 +10,16 @@
     border-color: #fff;
   }
   .nav-link {
-    font-family: "Montserrat";
+    transition: all 275ms ease;
+    font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 100%;
     letter-spacing: 0.01em;
-    color: #ffffff;
+    color: #000000 !important;
     margin-right: 15px;
     cursor: pointer;
-  }
-  .nav-link:hover {
-    color: #3bbcdc;
   }
 }
 @media screen and (max-width: 768px) {

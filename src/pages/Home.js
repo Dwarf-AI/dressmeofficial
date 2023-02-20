@@ -10,10 +10,12 @@ const Home = () => {
   const navbar = {
     firstNav: "Home",
     firstNavLink: "/",
-    secondNav: "BlockChain",
-    secondNavLink: "/blockchain",
-    thirdNav: "Blogs",
+    secondNav: "Why Us",
+    secondNavLink: "/whyus",
+    thirdNav: "Trusted By",
     thirdNavLink: "/blogs",
+    fourthNav: "FAQs",
+    fourthNavLink: "/faqs",
   };
 
   const heroSection = {

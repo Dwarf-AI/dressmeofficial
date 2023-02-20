@@ -1,6 +1,28 @@
+import ImageGallery from "react-image-gallery";
+import Model1 from "../../assets/model1.png";
+import Model2 from "../../assets/model2.png";
+import Model3 from "../../assets/model3.png";
+import Thumb1 from "../../assets/thumb1.png";
+import Thumb2 from "../../assets/thumb2.png";
+import Thumb3 from "../../assets/thumb3.png";
+
 import "./HeroSection.scss";
 
 function HeroSection(props) {
+  const images = [
+    {
+      original: Model1,
+      thumbnail: Thumb1,
+    },
+    {
+      original: Model2,
+      thumbnail: Thumb2,
+    },
+    {
+      original: Model3,
+      thumbnail: Thumb3,
+    },
+  ];
   return (
     <div className="heroSection">
       <div className="container">
@@ -28,11 +50,18 @@ function HeroSection(props) {
             </div>
           </div>
           <div className="col-lg-6 col-12 d-flex align-itmes-center justify-content-center">
-            <img
-              src={props.heroSection.image}
-              width="80%"
-              alt="HeroSectionImage"
-            ></img>
+            <div className="outer-div">
+              {/* <h1>Change Your Style</h1>
+              <p>With A Click Of A Button</p> */}
+              <ImageGallery
+                showNav={false}
+                showPlayButton={false}
+                useBrowserFullscreen={false}
+                items={images}
+                showFullscreenButton={false}
+                autoPlay={true}
+              />
+            </div>
           </div>
         </div>
       </div>

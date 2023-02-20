@@ -4,7 +4,9 @@ import "./FeatureSection.scss";
 const FeatureSection = () => {
   return (
     <>
-      <div className="featureSection">sds</div>
+      <div className="featureSection" id="whyus">
+        sds
+      </div>
     </>
   );
 };

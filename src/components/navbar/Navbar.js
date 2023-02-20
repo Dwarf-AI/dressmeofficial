@@ -4,9 +4,13 @@ import "./Navbar.scss";
 import NavLogo from "./../../assets/Logo.png";
 
 function Navbar(props) {
-  const scrollToProjects = () => {
-    const projects = document.getElementById("projects");
-    projects.scrollIntoView({ behavior: "smooth", block: "center" });
+  const scrollToWhyus = () => {
+    const whyus = document.getElementById("whyus");
+    whyus.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+  const scrollToTrustby = () => {
+    const trustus = document.getElementById("trustus");
+    trustus.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
   return (
@@ -31,23 +35,23 @@ function Navbar(props) {
             <ul className="navbar-nav ml-auto d-flex align-items-center">
               <li className="nav-item active">
                 <Link className="nav-link" to={props.navbar.firstNavLink}>
-                  {props.navbar.firstNav}
-                  <span className="sr-only">(current)</span>
+                  Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={props.navbar.secondNavLink}>
-                  {props.navbar.secondNav}
+                <Link className="nav-link" onClick={scrollToWhyus}>
+                  Why Us
                 </Link>
               </li>
-              <li>
-                <Link className="nav-link" to={props.navbar.thirdNavLink}>
-                  {props.navbar.thirdNav}
-                </Link>
+              <li className="nav-link" onClick={scrollToTrustby}>
+                Trusted By
               </li>
-              <li className="nav-link" onClick={scrollToProjects}>
+              <li className="nav-link" to={props.navbar.fourthNavLink}>
+                FAQs
+              </li>
+              {/* <li className="nav-link" onClick={scrollToProjects}>
                 <span className="nav-link">Projects</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

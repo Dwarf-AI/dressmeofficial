@@ -33,7 +33,7 @@ const Testimonial = () => {
   ];
   return (
     <>
-      <div className="testimonial-section">
+      <div className="testimonial-section" id="trustus">
         <div className="brand-slider py-5">
           <h1 className="px-5  text-center">Trusted By</h1>
           <div className="container">

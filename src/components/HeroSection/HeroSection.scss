@@ -1,9 +1,40 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
 .heroSection {
   background-color: #ef9b4d;
   min-height: calc(100vh - 100px);
   display: flex;
   align-items: center;
   color: #fff;
+
+  .outer-div {
+    color: #000;
+    background: #ffffff;
+    box-shadow: 18px 18px 25px 0 rgb(0 0 0 / 30%),
+      inset 0 100px 80px 0 rgb(238 154 77 / 30%);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .image-gallery-content .image-gallery-slide .image-gallery-image {
+      max-width: 450px;
+    }
+    .image-gallery-thumbnail-image {
+      height: 85px;
+      padding: 10px;
+    }
+    .image-gallery-thumbnail {
+      border-radius: 25px;
+      margin: 10px;
+      border: 1px solid rgba(238, 154, 77, 0.4);
+    }
+    .image-gallery-thumbnail.active,
+    .image-gallery-thumbnail:focus {
+      border-radius: 25px;
+      background-color: #ef9b4d;
+    }
+  }
   .leftBox {
     margin: 20px auto;
     h1 {
