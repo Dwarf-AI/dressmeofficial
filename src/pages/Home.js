@@ -4,6 +4,7 @@ import Footer from "../components/footer/Footer";
 import HeroSection from "../components/HeroSection/HeroSection";
 import HeroSectionImage from "../assets/Logo.png";
 import Testimonial from "../components/Testimonial/Testimonial";
+import FeatureSection from "../components/featureSection/FeatureSection";
 
 const Home = () => {
   const navbar = {
@@ -26,6 +27,7 @@ const Home = () => {
     <>
       <Navbar navbar={navbar} />
       <HeroSection heroSection={heroSection} />
+      <FeatureSection />
       <Testimonial />
       <Footer />
     </>

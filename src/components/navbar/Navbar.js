@@ -8,10 +8,7 @@ function Navbar(props) {
     const projects = document.getElementById("projects");
     projects.scrollIntoView({ behavior: "smooth", block: "center" });
   };
-  const scrollToContactForm = () => {
-    const contactForm = document.getElementById("contactForm");
-    contactForm.scrollIntoView({ behavior: "smooth", block: "center" });
-  };
+
   return (
     <div>
       <nav className="navbar navbar-dark navbar-expand-lg navbar-main">

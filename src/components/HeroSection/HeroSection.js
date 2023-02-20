@@ -18,10 +18,10 @@ function HeroSection(props) {
                 <button className="enquireBTN" onClick={scrollToContactForm}>
                   Enquire Now
                 </button>
-                <div class="input-group">
+                <div className="input-group">
                   <input
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Search for..."
                   />
                   <button className="whatsappBTN">
@@ -30,9 +30,9 @@ function HeroSection(props) {
                       Connect on WhatsApp
                     </a>
                   </button>
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
-                      <i class="fa fa-search"></i>
+                  <span className="input-group-btn">
+                    <button className="btn btn-default" type="submit">
+                      <i className="fa fa-search"></i>
                     </button>
                   </span>
                 </div>

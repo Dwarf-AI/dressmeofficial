@@ -4,54 +4,37 @@
   display: flex;
   align-items: center;
   color: #fff;
-}
-.leftBox {
-  margin: 20px auto;
-  h1 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    letter-spacing: 0.01em;
-    color: #ffffff;
-    margin-bottom: 25px;
-  }
-  p {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 0.01em;
-    color: #dfdcdc;
-    margin-bottom: 60px;
-  }
-  .buttonBox {
-    .enquireBTN {
-      font-family: "Montserrat", sans-serif;
-      padding: 10px 20px;
-      background: #44b34d;
-      border-radius: 4px;
+  .leftBox {
+    margin: 20px auto;
+    h1 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      letter-spacing: 0.01em;
       color: #ffffff;
-      cursor: pointer;
-      border: none;
-      outline: none;
-      margin-right: 30px;
+      margin-bottom: 25px;
     }
-    .whatsappBTN {
-      font-family: "Montserrat", sans-serif;
-      padding: 10px 40px;
-      background: transparent;
-      color: #44b34d;
-      border: 1px solid #44b34d;
-      border-radius: 41px;
-      cursor: pointer;
-      a {
+    p {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 0.01em;
+      color: #dfdcdc;
+      margin-bottom: 60px;
+    }
+    .buttonBox {
+      .enquireBTN {
         font-family: "Montserrat", sans-serif;
-        color: #44b34d;
-        text-decoration: none;
-      }
-      .whatsappIcon {
-        margin-right: 10px;
+        padding: 10px 20px;
+        background: #44b34d;
+        border-radius: 4px;
+        color: #ffffff;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        margin-right: 30px;
       }
     }
   }
@@ -82,17 +65,6 @@
         outline: none;
         cursor: pointer;
         margin-bottom: 20px;
-      }
-      .whatsappBTN {
-        padding: 10px 40px;
-        background: transparent;
-        color: #44b34d;
-        border: 1px solid #44b34d;
-        border-radius: 41px;
-        cursor: pointer;
-        .whatsappIcon {
-          margin-right: 10px;
-        }
       }
     }
   }

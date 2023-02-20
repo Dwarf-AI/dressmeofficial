@@ -35,7 +35,7 @@ const Testimonial = () => {
     <>
       <div className="testimonial-section">
         <div className="brand-slider py-5">
-          <h1 class="px-5  text-center">Trusted By</h1>
+          <h1 className="px-5  text-center">Trusted By</h1>
           <div className="container">
             <div className="brand-img-container">
               <div className="brand-img">
@@ -59,7 +59,7 @@ const Testimonial = () => {
             </div>
           </div>
         </div>
-        <div className="accordion">
+        <div className="accordion pb-5">
           <div className="container py-4 testimonial-title">
             <h1>FAQs</h1>
             <h2>All Your Queries Resolved</h2>
