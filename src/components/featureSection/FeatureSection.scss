@@ -1,7 +1,58 @@
 .featureSection {
   background-color: #ffffff;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  color: #fff;
+  justify-content: center;
+  color: #000000;
+  padding-top: 140px;
+  padding-bottom: 100px;
+
+  .box1 {
+    margin-top: 87px;
+  }
+  .box2 {
+    margin-top: -87px;
+  }
+  .center-img1 {
+    display: none;
+  }
+  .center-img2 img {
+    transform: rotate(10deg);
+  }
+  .cardd {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 52px;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 400;
+    font-family: "DM Serif Display", sans-serif;
+    .img-div {
+      width: 100%;
+    }
+    .heading-1 {
+      color: #000000;
+      line-height: 0.7;
+    }
+    .heading-2 {
+      color: #ee9a4d;
+    }
+    p {
+      color: #000;
+      font-size: 18px;
+      line-height: 1.2;
+      font-family: Poppins, sans-serif;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .center-img1 {
+    display: block !important;
+  }
+  .center-img2 {
+    display: none;
+  }
 }
