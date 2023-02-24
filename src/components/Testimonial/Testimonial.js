@@ -11,24 +11,24 @@ import Brand6 from "../../assets/brand6.svg";
 const Testimonial = () => {
   const accordionData = [
     {
-      title: "What is Dress Me?",
-      content: `You can take a photo within the app or choose an existing photo from your camera roll. The app will guide you through the process of positioning your body and camera for the best results.`,
+      title: "What is Dressme?",
+      content: `Dressme is a virtual try-on product that allows users to see how clothing items will look on them before making a purchase.`,
     },
     {
-      title: "How does Dress Me work??",
+      title: "How does Dressme work??",
       content: `You can take a photo within the app or choose an existing photo from your camera roll. The app will guide you through the process of positioning your body and camera for the best results.`,
     },
     {
       title: "Is Dress Me available on both iOS and Android?",
-      content: `You can take a photo within the app or choose an existing photo from your camera roll. The app will guide you through the process of positioning your body and camera for the best results.`,
+      content: `Our team has been working tirelessly to create a product that will revolutionize the way you shop online and we are excited to announce that Dress Me will be available on both iOS and Android in just a few months.`,
     },
     {
-      title: "How do I take a photo to use in Dress Me?",
+      title: "How do I take a photo to use in Dressme?",
       content: `You can take a photo within the app or choose an existing photo from your camera roll. The app will guide you through the process of positioning your body and camera for the best results.`,
     },
     {
       title: "Can I try on different sizes of clothing in Dress Me?",
-      content: `You can take a photo within the app or choose an existing photo from your camera roll. The app will guide you through the process of positioning your body and camera for the best results.`,
+      content: `Yes, with Dressme you can try on different sizes of clothing virtually. When you select a clothing item to try on, you will have the option to choose different sizes, colors, and styles if available`,
     },
   ];
   return (
@@ -59,6 +59,7 @@ const Testimonial = () => {
             </div>
           </div>
         </div> */}
+
         <div className="accordion pb-5">
           <div className="container py-4 testimonial-title">
             <h1>FAQs</h1>
