@@ -34,7 +34,7 @@ const Testimonial = () => {
   return (
     <>
       <div className="testimonial-section" id="trustus">
-        <div className="brand-slider py-5">
+        {/* <div className="brand-slider py-5">
           <h1 className="px-5  text-center">Trusted By</h1>
           <div className="container">
             <div className="brand-img-container">
@@ -58,7 +58,7 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="accordion pb-5">
           <div className="container py-4 testimonial-title">
             <h1>FAQs</h1>
