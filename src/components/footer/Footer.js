@@ -56,7 +56,7 @@ function Footer() {
           </div>
           <div className="row footer-lower">
             <div className=" col-md-6 py-3 text-left ">
-              © 2022 Company name. All rights reserved
+              © 2023 Dressme. All rights reserved
             </div>
             <div className=" col-md-6 py-3  text-right">
               hello@dressmeofficial.com
