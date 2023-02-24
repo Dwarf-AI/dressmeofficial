@@ -34,31 +34,31 @@ const Testimonial = () => {
   return (
     <>
       <div className="testimonial-section" id="trustus">
-        <div className="brand-slider py-5">
-          <h1 className="px-5  text-center">Trusted By</h1>
-          <div className="container">
-            <div className="brand-img-container">
-              <div className="brand-img">
-                <img src={Brand1} alt="Brand 1" />
-              </div>
-              <div className="brand-img">
-                <img src={Brand2} alt="Brand 2" />
-              </div>
-              <div className="brand-img">
-                <img src={Brand3} alt="Brand 3" />
-              </div>
-              <div className="brand-img">
-                <img src={Brand4} alt="Brand 4" />
-              </div>
-              <div className="brand-img">
-                <img src={Brand5} alt="Brand 5" />
-              </div>
-              <div className="brand-img">
-                <img src={Brand6} alt="Brand 5" />
-              </div>
-            </div>
-          </div>
-        </div>
+//         <div className="brand-slider py-5">
+//           <h1 className="px-5  text-center">Trusted By</h1>
+//           <div className="container">
+//             <div className="brand-img-container">
+//               <div className="brand-img">
+//                 <img src={Brand1} alt="Brand 1" />
+//               </div>
+//               <div className="brand-img">
+//                 <img src={Brand2} alt="Brand 2" />
+//               </div>
+//               <div className="brand-img">
+//                 <img src={Brand3} alt="Brand 3" />
+//               </div>
+//               <div className="brand-img">
+//                 <img src={Brand4} alt="Brand 4" />
+//               </div>
+//               <div className="brand-img">
+//                 <img src={Brand5} alt="Brand 5" />
+//               </div>
+//               <div className="brand-img">
+//                 <img src={Brand6} alt="Brand 5" />
+//               </div>
+//             </div>
+//           </div>
+//         </div>
         <div className="accordion pb-5">
           <div className="container py-4 testimonial-title">
             <h1>FAQs</h1>
