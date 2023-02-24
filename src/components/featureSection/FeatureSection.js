@@ -4,6 +4,8 @@ import Image from "./../../assets/display.png";
 import SideImage from "./../../assets/sidebar.jpg";
 import Arrowup from "./../../assets/arrowup.png";
 
+import { motion } from "framer-motion";
+
 const FeatureSection = () => {
   return (
     <>
@@ -29,7 +31,11 @@ const FeatureSection = () => {
             />
           </div>
           <div className="row justify-content-center align-items-center">
-            <div className="col-md-4  box1">
+            <motion.div
+              className="col-md-4  box1"
+              initial={{ x: "calc(-100vw - 50%)" }}
+              animate={{ x: "0%" }}
+            >
               <div className="cardd ">
                 <div className="text-right">
                   <img
@@ -70,7 +76,7 @@ const FeatureSection = () => {
                   from friends.
                 </p>
               </div>
-            </div>
+            </motion.div>
             <div className="col-md-4 text-center my-auto center-img2 pl-2">
               <img
                 src={Image}
@@ -79,7 +85,11 @@ const FeatureSection = () => {
                 alt=""
               />
             </div>
-            <div className="col-md-4 box2">
+            <motion.div
+              className="col-md-4 box2"
+              initial={{ x: "calc(-100vw - 50%)" }}
+              animate={{ x: "0%" }}
+            >
               <div className="cardd">
                 <h1 className="heading-1">Share your</h1>
                 <h1 className="heading-2">Confidence</h1>
@@ -98,7 +108,7 @@ const FeatureSection = () => {
                 </p>
                 <img src={Arrowup} width="170px" className="arrow img" alt="" />
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

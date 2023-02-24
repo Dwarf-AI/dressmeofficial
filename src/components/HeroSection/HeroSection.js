@@ -5,7 +5,7 @@ import Model3 from "../../assets/model3.png";
 import Thumb1 from "../../assets/thumb1.png";
 import Thumb2 from "../../assets/thumb2.png";
 import Thumb3 from "../../assets/thumb3.png";
-
+import { motion } from "framer-motion";
 import "./HeroSection.scss";
 
 function HeroSection() {
@@ -34,7 +34,16 @@ function HeroSection() {
       <div className="container-fluid">
         <div className="row align-items-center justify-content-center h-100">
           <div className="col-lg-6 col-12 d-flex align-items-center">
-            <div className="leftBox">
+            <motion.div
+              className="leftBox"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
               <h1>Your Virtual</h1>
               <h1 className="second-line">Stylist,</h1>
               <h4 className="first-para">Try Before, You Buy</h4>
@@ -53,10 +62,17 @@ function HeroSection() {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div className="col-lg-6 col-12 d-flex align-itmes-center justify-content-center">
-            <div className="outer-div">
+            <motion.div
+              className="outer-div"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 1.2,
+              }}
+            >
               <h1>
                 Change Your <span>Style</span>
               </h1>
@@ -70,7 +86,7 @@ function HeroSection() {
                 thumbnailPosition={"bottom"}
                 autoPlay={true}
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
