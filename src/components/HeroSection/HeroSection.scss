@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   color: #fff;
+  padding: 0 5%;
 
   .outer-div {
     color: #000;
@@ -17,6 +18,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    h1 {
+      padding-top: 5%;
+      font-size: 40px;
+      line-height: 1;
+      font-weight: 400;
+      font-family: "DM Serif Display", sans-serif;
+      color: #000;
+      span {
+        color: #ef9b4d;
+      }
+    }
+
+    p {
+      font-weight: 600;
+      color: #000;
+      font-size: 18px;
+      line-height: 1.2;
+    }
     .image-gallery-content .image-gallery-slide .image-gallery-image {
       max-width: 450px;
     }
@@ -36,12 +56,13 @@
     }
   }
   .leftBox {
-    margin: 20px auto;
+    margin: 20px auto 20px 0;
+    max-width: 500px;
     h1 {
       font-family: "DM Serif Display", sans-serif;
       font-style: normal;
-      font-weight: 700;
-      font-size: 50px;
+      font-weight: 400;
+      font-size: 69px;
       line-height: 0.8;
       color: #000000;
       margin-bottom: 25px;
@@ -49,8 +70,12 @@
     .second-line {
       color: #ffffff;
     }
-    h4 {
+    .first-para {
       color: #000;
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 20px;
     }
     p {
       font-family: "Poppins", sans-serif;
@@ -60,7 +85,7 @@
       text-align: justify;
       line-height: 1.2;
       color: #ffffff;
-      margin-bottom: 60px;
+      margin-bottom: 20px;
     }
     .buttonBox {
       .searchbox-wrap {

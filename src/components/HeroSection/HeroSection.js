@@ -8,7 +8,12 @@ import Thumb3 from "../../assets/thumb3.png";
 
 import "./HeroSection.scss";
 
-function HeroSection(props) {
+function HeroSection() {
+  // const springs = useSpring({
+  //   from: { x: 0 },
+  //   to: { x: 100 },
+  // });
+
   const images = [
     {
       original: Model1,
@@ -24,14 +29,15 @@ function HeroSection(props) {
     },
   ];
   return (
+    // <animated.div style={springs}>
     <div className="heroSection">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row align-items-center justify-content-center h-100">
           <div className="col-lg-6 col-12 d-flex align-items-center">
             <div className="leftBox">
               <h1>Your Virtual</h1>
               <h1 className="second-line">Stylist,</h1>
-              <h4>Try Before, You Buy</h4>
+              <h4 className="first-para">Try Before, You Buy</h4>
               <p>
                 Our innovative technology allows you to try on an endless array
                 of outfits without ever leaving your home. Our advanced virtual
@@ -51,14 +57,17 @@ function HeroSection(props) {
           </div>
           <div className="col-lg-6 col-12 d-flex align-itmes-center justify-content-center">
             <div className="outer-div">
-              {/* <h1>Change Your Style</h1>
-              <p>With A Click Of A Button</p> */}
+              <h1>
+                Change Your <span>Style</span>
+              </h1>
+              <p>With A Click Of A Button</p>
               <ImageGallery
                 showNav={false}
                 showPlayButton={false}
                 useBrowserFullscreen={false}
                 items={images}
                 showFullscreenButton={false}
+                thumbnailPosition={"bottom"}
                 autoPlay={true}
               />
             </div>
@@ -66,6 +75,7 @@ function HeroSection(props) {
         </div>
       </div>
     </div>
+    // </animated.div>
   );
 }
 

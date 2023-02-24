@@ -1,24 +1,34 @@
 import React from "react";
 import "./FeatureSection.scss";
 import Image from "./../../assets/display.png";
+import SideImage from "./../../assets/sidebar.jpg";
 import Arrowup from "./../../assets/arrowup.png";
 
 const FeatureSection = () => {
   return (
     <>
       <div className="featureSection" id="whyus">
-        <div className="container">
+        <div className="container" style={{ position: "relative" }}>
+          <img
+            src={SideImage}
+            style={{ paddingRight: "10px", transformStyle: "preserve-3d" }}
+            className="rounded img-fluid side-image"
+            alt=""
+          />
+          <div
+            className="center-img1 text-center"
+            // style={{ width: "100%" }}
+          >
+            <img
+              src={Image}
+              // width="80%"
+              // height="200px"
+              style={{ paddingRight: "100px", transformStyle: "preserve-3d" }}
+              className="rounded img-fluid  "
+              alt=""
+            />
+          </div>
           <div className="row justify-content-center align-items-center">
-            <div className="col-md-4 text-center my-auto center-img1  ">
-              <img
-                src={Image}
-                // width="270px"
-                width="80%"
-                style={{ paddingRight: "100px", transformStyle: "preserve-3d" }}
-                className="rounded img-fluid"
-                alt=""
-              />
-            </div>
             <div className="col-md-4  box1">
               <div className="cardd ">
                 <div className="text-right">
@@ -29,7 +39,7 @@ const FeatureSection = () => {
                       transform: "rotate(180deg)",
                       marginBottom: "10px",
                     }}
-                    className=" img"
+                    className="arrow img"
                     alt=""
                   />
                 </div>
@@ -49,7 +59,7 @@ const FeatureSection = () => {
                       transform: "rotate(180deg)",
                       marginBottom: "10px",
                     }}
-                    className=" img"
+                    className="arrow img"
                     alt=""
                   />
                 </div>
@@ -77,7 +87,7 @@ const FeatureSection = () => {
                   Shop online with confidence knowing what you’re buying will
                   look great on you.
                 </p>
-                <img src={Arrowup} width="170px" className=" img" alt="" />
+                <img src={Arrowup} width="170px" className="arrow img" alt="" />
               </div>
               <div className="cardd">
                 <h1 className="heading-1">Share your</h1>
@@ -86,13 +96,7 @@ const FeatureSection = () => {
                   Get outfit suggestions tailored to your style, body shape, and
                   occasion.
                 </p>
-                <img
-                  src={Arrowup}
-                  width="170px"
-                  // style={{ transform: "rotate(180deg)" }}
-                  className=" img"
-                  alt=""
-                />
+                <img src={Arrowup} width="170px" className="arrow img" alt="" />
               </div>
             </div>
           </div>
