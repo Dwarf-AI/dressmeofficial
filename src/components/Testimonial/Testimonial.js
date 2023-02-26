@@ -61,7 +61,7 @@ const Testimonial = () => {
         </div> */}
 
         <div className="accordion pb-5">
-          <div className="container py-4 testimonial-title">
+          <div className="py-4 testimonial-title">
             <h1>FAQs</h1>
             <h2>All Your Queries Resolved</h2>
           </div>
