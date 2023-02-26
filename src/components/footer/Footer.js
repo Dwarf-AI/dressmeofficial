@@ -2,8 +2,35 @@ import React from "react";
 import "./Footer.scss";
 import NavLogo from "./../../assets/Logo.png";
 import rightArrow from '../../assets/right-arrow.png';
+import emailjs from 'emailjs-com'
+import {useState} from 'react';
+import { emailValidator } from "../../utils";
+import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "../../constant";
 
 function Footer() {
+
+  const [email, setEmail] = useState('');
+  const [emailErr, setEmailErr] = useState('');
+  const [emailSent, setEmailSent] = useState(false);
+  const formHandler = (e)=>{
+    e.preventDefault();
+    if(emailValidator(email)){
+      emailjs.send(SERVICE_ID, TEMPLATE_ID,{from_name: email},PUBLIC_KEY)
+      .then((result) => {
+        if(result.text === "OK") {
+          setEmailSent(true);
+        }
+    }, (error) => {
+    });
+    }
+    else{
+      setEmailErr("Please provide a valid email*");
+      setTimeout(()=>{
+        setEmailErr("");
+      },3000);
+    }
+      
+  }
   return (
     <>
       <div className="footer px-5">
@@ -47,12 +74,18 @@ function Footer() {
             </div>
             <hr className="clearfix w-100 d-md-none" />
             <div className="my-auto text-center col-lg-4">
+             {!emailSent ? 
               <div class="searchbox-wrap">
-                <input type="text" placeholder="Join the waitlist" />
-                <button>
+              <input type="email" placeholder="Join the waitlist" value={email} onChange = {(e)=>setEmail(e.target.value)}/>
+                <button onClick={formHandler}>
                   <img src={rightArrow} />
                 </button>
-              </div>
+              </div> :
+                <button className="emailSent">
+                <span>Thank you !</span>
+              </button>}
+                {emailErr &&
+                    <div className="err-field">{emailErr}</div>}
             </div>
           </div>
           
