@@ -9,7 +9,7 @@
   padding: 0 5%;
 
   .outer-div {
-    height: 69vh;
+    width: 100%;
     height: fit-content;
     color: #000;
     background: #ffffff;
@@ -200,7 +200,6 @@
     }
   }
 }
-
 @media only screen and (max-width: 600px) {
   .image-gallery-thumbnail {
     border-radius: 25px;
