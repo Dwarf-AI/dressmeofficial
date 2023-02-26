@@ -15,7 +15,7 @@ const Testimonial = () => {
       content: `Dressme is a virtual try-on product that allows users to see how clothing items will look on them before making a purchase.`,
     },
     {
-      title: "How does Dressme work??",
+      title: "How does Dressme work?",
       content: `You can take a photo within the app or choose an existing photo from your camera roll. The app will guide you through the process of positioning your body and camera for the best results.`,
     },
     {
