@@ -7,13 +7,21 @@ import Thumb2 from "../../assets/thumb2.png";
 import Thumb3 from "../../assets/thumb3.png";
 import { motion } from "framer-motion";
 import "./HeroSection.scss";
+import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "../../constant";
+import emailjs from  'emailjs-com';
+import { useState } from "react";
+import {emailValidator} from '../../utils/index'
+
+
 
 function HeroSection() {
   // const springs = useSpring({
   //   from: { x: 0 },
   //   to: { x: 100 },
   // });
-
+  const [email, setEmail] = useState('');
+  const [emailErr, setEmailErr] = useState('');
+  const [emailSent, setEmailSent] = useState(false);
   const images = [
     {
       original: Model1,
@@ -28,6 +36,26 @@ function HeroSection() {
       thumbnail: Thumb3,
     },
   ];
+  const formHandler = (e)=>{
+    e.preventDefault();
+    if(emailValidator(email)){
+      emailjs.send(SERVICE_ID, TEMPLATE_ID,{from_name: email},PUBLIC_KEY)
+      .then((result) => {
+        if(result.text === "OK") {
+          setEmailSent(true);
+        }
+    }, (error) => {
+    });
+    }
+    else{
+      setEmailErr("Please provide a valid email*");
+      setTimeout(()=>{
+        setEmailErr("");
+      },3000);
+    }
+      
+  }
+  
   return (
     // <animated.div style={springs}>
     <div className="heroSection">
@@ -54,14 +82,20 @@ function HeroSection() {
                 clothes will look and fit, so you can confidently purchase the
                 perfect outfit every time.
               </p>
+              {!emailSent ?
               <div className="buttonBox">
                 <div class="searchbox-wrap">
-                  <input type="email" placeholder="Enter Your Email" />
-                  <button>
+                  <input type="email" placeholder="Enter Your Email" value={email} onChange = {(e)=>setEmail(e.target.value)}/>
+                  <button onClick={formHandler}>
                     <span>Join the waitlist</span>
                   </button>
                 </div>
-              </div>
+                  {emailErr &&
+                    <div className="err-field">{emailErr}</div>}
+              </div> :
+              <button className="emailSent">
+              <span>Thank you !</span>
+            </button>}
             </motion.div>
           </div>
           <div className="col-lg-6 col-12 d-flex align-itmes-center justify-content-center">
@@ -83,7 +117,7 @@ function HeroSection() {
                 useBrowserFullscreen={false}
                 items={images}
                 showFullscreenButton={false}
-                thumbnailPosition={"bottom"}
+                thumbnailPosition={window.outerWidth < 1000 ? "top" : "left"}
                 autoPlay={true}
               />
             </motion.div>

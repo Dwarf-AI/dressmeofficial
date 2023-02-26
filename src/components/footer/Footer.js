@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 import NavLogo from "./../../assets/Logo.png";
+import rightArrow from '../../assets/right-arrow.png';
 
 function Footer() {
   return (
@@ -49,16 +50,17 @@ function Footer() {
               <div class="searchbox-wrap">
                 <input type="text" placeholder="Join the waitlist" />
                 <button>
-                  <span>&#8594;</span>
+                  <img src={rightArrow} />
                 </button>
               </div>
             </div>
           </div>
+          
           <div className="row footer-lower">
-            <div className=" col-md-6 py-3 text-left ">
+            <div className={`col-md-6 py-3 ${window.outerWidth < 500 ? 'text-center' : 'text-left'}`}>
               © 2023 Dressme. All rights reserved
             </div>
-            <div className=" col-md-6 py-3  text-right">
+            <div className={`col-md-6 py-3 ${window.outerWidth < 500 ? 'text-center' : 'text-right'}`}>
               hello@dressmeofficial.com
             </div>
           </div>
